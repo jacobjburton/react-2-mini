@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// Components
+// Child Components
 import EditToggle from './components/EditToggle';
 import ColorChanger from './components/ColorChanger';
 import SizeChanger from './components/SizeChanger';
@@ -53,10 +53,17 @@ class App extends Component
     return (
       <div>
         <div className="headerBar">
-          <EditToggle update={ this.updateEditStatus } />
-          <ColorChanger update={ this.updateColor } allowEdit={ this.state.allowEdit } />
-          <SizeChanger update={ this.updateSize } allowEdit={ this.state.allowEdit } />
-          <FamilyChanger update={ this.updateFamily } allowEdit={ this.state.allowEdit } />
+          <EditToggle
+            update={ this.updateEditStatus } />
+          <ColorChanger
+            update={ this.updateColor }
+            allowEdit={ this.state.allowEdit } />
+          <SizeChanger
+            update={ this.updateSize }
+            allowEdit={ this.state.allowEdit } />
+          <FamilyChanger
+            update={ this.updateFamily }
+            allowEdit={ this.state.allowEdit } />
         </div>
         <div className="textArea">
           <TextContainer

@@ -10,6 +10,9 @@ export default function ColorChanger(props)
       <option value="black"> Black </option>
       <option value="blue"> Blue </option>
       <option value="green"> Green </option>
+      <option value="red"> Red </option>
+      <option value="orange"> Orange </option>
+      <option value="pink"> Pink </option>
     </select>
   )
 }
